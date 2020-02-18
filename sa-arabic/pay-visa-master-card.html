@@ -1,0 +1,271 @@
+<html lang="en" dir="rtl"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/daterangepicker.css">
+    <link rel="stylesheet" href="css/style-en.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg ">
+            <a class="navbar-brand" href="#"><img src="img/logo.svg" width="140" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            العربية
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                            <div class="p-1 text-primary">اللغات</div>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"><img src="img/en.svg" alt=""> الانجليزية (UK)</a>
+                            <a class="dropdown-item" href="#"><img src="img/ar.svg" alt=""> العربية (KSA)  </a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            KSA (S.R)
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                            <div class="p-1 text-primary">العملات</div>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"><img src="img/en.svg" alt=""> اليورو (UK)</a>
+                            <a class="dropdown-item" href="#"><img src="img/ar.svg" alt=""> الريال السعودي (KSA)  </a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span class="icon icon-cart1"></span><span class="text">العربة</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span class="icon icon-help"></span><span class="text">مركز المساعدة</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="icon icon-user"></span><span class="text">تسجيل دخول</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                            <a class="dropdown-item" href="#"><span class="icon icon-user"></span> <span class="text">تسجيل دخول</span>  </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">  <i class="icon icon-time"></i> <span class="text">السجل</span> <span class="number">3</span></a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"> <i class="icon icon-favorite"></i> <span class="text">المفضلة</span> <span class="number">3</span></a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  btn-primary" href="#"><span class="">تسجيل</span></a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+    </div>
+</header>
+
+<section class="checkput">
+    <div class="container p-4">
+        <div class="row justify-content-between">
+            <div class="col-lg-8">
+
+
+                        <div class="title text-primary font-weight-bold"><h5>Payment details</h5></div>
+                        <div class="mt-3">
+                            <span><img src="img/lock.svg" alt=""></span>
+                            <label class="mb-0">Payments are secure and encrypted</label>
+
+                        </div>
+                        <div class="text-right my-3 small text-primary">*. Required fields</div>
+
+                <div class="row">
+                    <div class="col-md-9">
+                        <form>
+                            <div class="form-group row">
+                                <label for="fname" class="col-sm-3 col-form-label">Name on card*</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="fname" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="lname" class="col-sm-3 col-form-label">Card number*</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" id="lname" placeholder="">
+                                    <p class="small">Xxxx xxxx xxxx xxxx</p>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-3 pr-0 col-form-label">Expiration date*</label>
+                                <div class="col-sm-5">
+                                    <div class="row m-0">
+                                        <input type="text" class="form-control col mr-2"  placeholder="">
+                                        <input type="text" class="form-control col"  placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="Confirm" class="col-sm-3 col-form-label">Security code*</label>
+                                <div class="col-sm-3">
+                                    <input type="password" class="form-control" id="Confirm" placeholder="***">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row box-total-price">
+                    <div class="col">
+                        <p class="text-primary">Total Price</p>
+                    </div>
+                    <div class="col text-right">
+                        <h5 class="text-info">S.R 159.12</h5>
+                        <p class="small">No additional fees</p>
+                        <div class="link-pay"><a href="#" class="btn btn-primary rd py-lg-2 px-lg-5"><i class="icon-lock mr-2"></i> Pay Now</a></div>
+                    </div>
+
+                </div>
+                <div class="row tour-summery mt-3">
+                    <div class="col-lg-12">
+                        <p class="text-primary">Tour Summery</p>
+                    </div>
+                    <div class="col-lg-12 message-top">This experience has many people liked.</div>
+
+<!--                    item-->
+                        <div class="season-item py-3">
+                            <div class="img-item">
+                                <img src="img/img5.jpg" alt="">
+                            </div>
+                            <div class="text-item">
+                                <h5>Riyadh Season 1 Title Here</h5>
+                                <p>Description of the tour goes here, please replace your content with the ideal content for the description of the tour in Riyadh KSA…</p>
+                                <div class="price-item text-info text-right font-weight-bold">S.R 159.12</div>
+                                <div class="language-item">Language: English</div>
+
+                            </div>
+                        </div>
+<!--                    end item-->
+
+                    <div class="col-lg-12">
+
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+
+                <div class="right-box-pay px-3 py-4 bg-light">
+                    <div class="text-primary h5 mb-3 ">item-place item-total</div>
+                    <div><img src="img/pay.svg" height="28" alt=""></div>
+
+                    <div class="text-primary h5 mt-4">Data Security</div>
+                    <div class="row mt-3 ">
+                        <div class="col-sm-2 text-lg-right  pr-0 pt-1"><img src="img/lock.svg" width="25" alt=""></div>
+                        <div class="col-sm-10 text-primary">
+                            <p>Your info’s safe with us. All data is encrypted and transmitted security with an SSL protocol.</p>
+                            <p>Saudi Tours respects your privacy. We do not sell your personal information to anyone. Privacy Statement </p>
+                        </div>
+                    </div>
+                    <div class="text-primary h5 mt-4">Book with confidence</div>
+                    <div class="row mt-3 ">
+                        <div class="col-auto text-lg-right  pr-0 pt-1"><i class="icon-check"></i></div>
+                        <div class="col  text-primary">
+                            <p>Best price guarantee.</p>
+                        </div>
+
+
+
+                    </div>
+                    <div class="row">
+                        <div class="col-auto text-lg-right  pr-0 pt-1"><i class="icon-check"></i></div>
+                        <div class="col text-primary">
+                            <p>Full Experience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="pt-5 pb-0">
+    <div class="container ">
+        <div class="row">
+
+            <div class="col-lg-3 col-md-6 ">
+                <a href="#"><img src="img/logo-footer.png" alt=""></a>
+            </div>
+            <div class="col-lg-2 col-md-6 p-lgl-0">
+                <ul class="list-group">
+                    <li><a href="#">الدعم</a></li>
+                    <li><a href="#">اتصل بنا</a></li>
+                    <li><a href="#">سياسة خاصة</a></li>
+                    <li><a href="#">تعليمات الاستخدام</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-1 col-md-6 p-lg-0">
+                <ul class="list-group">
+                    <li><a href="#">الشركة</a></li>
+                    <li><a href="#">من نحن</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 pl-lg-5 pl-sm-0">
+                <ul class="list-group">
+                    <li><a href="#">اعمل معنا</a></li>
+                    <li><a href="#">جولات المورد</a></li>
+                </ul>
+                <div class="pay">
+                    <div class="title-pay">يمكنك الدفع عن طريق</div>
+                    <div class="img"><img src="img/pay.svg" alt=""></div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 pl-sm-0 pt-sm-3">
+                <div class="form-group">
+                    <label for="Language">اللغات</label>
+                    <select class="form-control" id="Language">
+                        <option>الانجليزية</option>
+                        <option>العربية</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="Currency">العملات</label>
+                    <select class="form-control" id="Currency">
+                        <option>S.R (KSA)</option>
+                        <option>S.R (KSA)</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="foot p-2 overflow-auto container">
+        <div class="rights float-right ml-lg-3 mt-lg-1">© 2019 جميع الحقوق محفوظة لشركة السعودية للسياحة
+        </div>
+        <div class="float-right">
+            <ul class="d-flex m-0 p-0 list-socil">
+                <li> <a href=""><span class="icon-social-facebook"></span></a> </li>
+                <li> <a href=""><span class="icon-twitter-logo-silhouette"></span></a> </li>
+                <li> <a href=""><span class="icon-instagram"></span></a> </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/daterangepicker.min.js"></script>
+
+<!--my code-->
+<script src="js/js.js"></script>
+</body></html>
