@@ -289,9 +289,20 @@ section.slider{
       }
 
     }
-    @media screen and(max-width: 780px){
-     display: none;
+    @include media-breakpoint-down(lg){
+      width: 100%;
+      left: 0 !important;
+      right: 0 !important;
+      position: absolute;
+      top: auto;
+      bottom: -114px;
+      background-color: $minColor;
     }
+  }
+}
+.section22{
+  @include media-breakpoint-down(lg){
+    margin-top: 106px;
   }
 }
 .form-control:focus , .btn-primary.focus, .btn-primary:focus{
