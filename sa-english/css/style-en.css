@@ -290,21 +290,32 @@ html {
   padding: 10px 0; }
   .section-3 .sa-row {
     overflow: auto;
-    padding: 15px; }
+    padding: 15px;
+    justify-content: center;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
     .section-3 .sa-row .sa-5 {
       width: 20%;
-      float: left;
+      -ms-flex: 0 0 20%;
+      flex: 0 0 20%;
       text-align: center;
       padding: 0 15px; }
       .section-3 .sa-row .sa-5 .icon {
-        font-size: 35px; }
+        font-size: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
       .section-3 .sa-row .sa-5 .title-s-3 {
         font-size: 18px;
         padding: 10px;
         color: #A2A2A2; }
       @media screen and (max-width: 780px) {
         .section-3 .sa-row .sa-5 {
-          width: 50%; } }
+          width: 50%;
+          -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+          margin-top: 20px; } }
 
 section.section-5 {
   background: #008095;

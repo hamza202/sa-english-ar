@@ -391,13 +391,21 @@ html{
 .sa-row{
   overflow: auto;
   padding: 15px;
+  justify-content: center;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   .sa-5{
-    width: 20%;
-    float: left;
     text-align: center;
+    width: 20%;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
     padding: 0 15px;
     .icon{
       font-size: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     .title-s-3{
       font-size: 18px;
@@ -406,6 +414,9 @@ html{
     }
     @media screen and (max-width: 780px){
       width: 50%;
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      margin-top: 20px;
     }
   }
 }
