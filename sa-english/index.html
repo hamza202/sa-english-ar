@@ -155,11 +155,11 @@
                 <div class="item-place shadow">
                     <div class="img"><img src="img/img1.jpg" width="100%" alt=""></div>
                     <div class="content-item p-3">
-                        <div class="title">Riyadh: Title of the Trip goes here in this lines</div>
+                        <div class="title" data-toggle="tooltip" data-placement="top" title="Riyadh: Title of the Trip goes here in this lines">Riyadh: Title of the Trip goes here in this lines</div>
                         <div class="date-time"><span class=" icon-time1"></span> <span class="text-time">Duration: 3 Days</span></div>
                         <div><a href="" class="btn btn-info"><i class="icon-taj"></i> Bestseller</a></div>
 
-                        <div class="row mr-0 mr-0 ml-0 mt-3">
+                        <div class="row mr-0 mr-0 ml-0 mt-3 footer-item">
                             <div class="col pl-0">
                                 <div class="stars"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></div>
                                 <div class="reviwews">176 Reviews</div>
@@ -296,7 +296,7 @@
                         <div class="date-time"><span class=" icon-time1"></span> <span class="text-time">Duration: 3 Days</span></div>
                         <div><a href="" class="btn btn-info"><i class="icon-taj"></i> Bestseller</a></div>
 
-                        <div class="row mr-0 mr-0 ml-0 mt-3">
+                        <div class="row mr-0 mr-0 ml-0 mt-3 footer-item">
                             <div class="col pl-0">
                                 <div class="stars"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></div>
                                 <div class="reviwews">176 Reviews</div>
@@ -424,7 +424,7 @@
                         <div class="item-place">
                             <div class="img"><img src="img/img4.jpg" width="100%" alt=""></div>
                             <div class="content-item p-3">
-                                <div class="title">Riyadh: Title of the Trip goes here in this lines</div>
+                                <div class="title" >Riyadh: Title of the Trip goes here in this lines</div>
                                 <div class="date-time"><span class=" icon-time1"></span> <span class="text-time">Duration: 3 Days</span></div>
                                 <div><a href="" class="btn btn-info"><i class="icon-taj"></i> Bestseller</a></div>
                                 <div class=" row mr-0 mr-0 ml-0  mt-3 footer-item">
@@ -911,10 +911,16 @@
     </div>
 </footer>
 <script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/moment.min.js"></script>
 <script src="js/daterangepicker.min.js"></script>
 
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
 <!--my code-->
 <script src="js/js.js"></script>
 </body>

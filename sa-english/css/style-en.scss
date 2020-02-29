@@ -327,7 +327,9 @@ html{
     font-size: 18px;
     font-weight: bold;
     line-height: 1;
-
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   .date-time{
     margin: 10px 0;
@@ -347,7 +349,7 @@ html{
     font-weight: bold;
   }
   .content-item{
-    height: 200px;
+    height: 175px;
     position: relative;
     margin-bottom: 15px;
     .footer-item{
@@ -391,7 +393,7 @@ html{
       justify-content: center;
     }
     .title-s-3{
-      font-size: 18px;
+      font-size: 17px;
       padding: 10px;
       color:#A2A2A2;
     }
@@ -423,7 +425,7 @@ section.section-6{
     background: #BCF6FF;
     height: 100%;
     .content-item-big{
-      padding: 90px 60px;
+      padding: 86px 60px;
     }
     h1{
       color:$minColor;
@@ -1304,4 +1306,10 @@ height: 500px;
     opacity: 0;
     display: none;
   }
+}
+.tooltip-inner{
+  background-color: $minColor;
+}
+.bs-tooltip-auto[x-placement^=top] .arrow::before, .bs-tooltip-top .arrow::before{
+  border-top-color:$minColor ;
 }
