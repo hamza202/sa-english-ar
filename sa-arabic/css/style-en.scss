@@ -295,7 +295,8 @@ section.slider{
       right: 0 !important;
       position: absolute;
       top: auto;
-      bottom: -114px;
+      bottom: 0;
+      transform: translateY(98%);
       background-color: $minColor;
     }
   }

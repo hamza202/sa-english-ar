@@ -220,7 +220,8 @@ section.slider {
         left: 0;
         position: absolute;
         top: auto;
-        bottom: -114px;
+        bottom: 0;
+        transform: translateY(98%);
         background-color: #1F2B6A; } }
 
 @media (max-width: 1199.98px) {
