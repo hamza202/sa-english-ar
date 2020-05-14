@@ -1,14 +1,6 @@
 $('input[name="dates"]').daterangepicker();
 $('input[name="dates"]').val('');
-$(function() {
-    $('input[name="dates1"]').daterangepicker({
-        singleDatePicker: true,
-        showDropdowns: true,
-        minYear: 1901,
-        maxYear: parseInt(moment().format('YYYY'),10)
-    });
-    $('input[name="dates1"]').val('');
-});
+
 $(function() {
     $('input[name="dates2"]').daterangepicker({
         locale: { cancelLabel: 'Clear' },

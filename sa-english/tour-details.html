@@ -611,6 +611,16 @@
             </div>
         </div>
     </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <button class="btn btn-primary comment-btn rounded-pill"  data-toggle="modal" data-target="#comment">
+                    Comment
+                </button>
+            </div>
+        </div>
+    </div>
+
 </section>
 
 <section class="section9 pt-5 pb-5">
@@ -714,11 +724,131 @@
         </div>
     </div>
 </footer>
+<div class="modal fade" id="comment" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <form action="#">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Comment and rate</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <textarea required class="form-control no-resize"  placeholder="Write your comment..."></textarea>
+                    </div>
+                    <section class="rating-widget">
+                        <!-- Rating Stars Box -->
+                        <div class="rating-stars text-center">
+                            <ul id="stars">
+                                <li class="star" title="سيئ" data-value="1">
+                                    <i class="icon-star"></i>
+                                </li>
+                                <li class="star" title="مقبول" data-value="2">
+                                    <i class="icon-star"></i>
+                                </li>
+                                <li class="star" title="جيد" data-value="3">
+                                    <i class="icon-star"></i>
+                                </li>
+                                <li class="star" title="جيد جدا" data-value="4">
+                                    <i class="icon-star"></i>
+                                </li>
+                                <li class="star" title="ممتاز" data-value="5">
+                                    <i class="icon-star"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="success-box">
+                            <div class="text-message"><span>3</span></div>
+                        </div>
+                    </section>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Comment</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/moment.min.js"></script>
 <script src="js/daterangepicker.min.js"></script>
+<script>
 
+    jQuery(document).ready(function () {
+        jQuery('#stars li').on('mouseover', function () {
+            var onStar = parseInt(jQuery(this).data('value'), 10);
+            jQuery(this).parent().children('li.star').each(function (e) {
+                if (e < onStar) {
+                    jQuery(this).addClass('hover');
+                } else {
+                    jQuery(this).removeClass('hover');
+                }
+            });
+
+        }).on('mouseout', function () {
+            jQuery(this).parent().children('li.star').each(function (e) {
+                jQuery(this).removeClass('hover');
+            });
+        });
+
+
+        /* 2. Action to perform on click */
+        jQuery('#stars li').on('click', function () {
+            var onStar = parseInt(jQuery(this).data('value'), 10);
+            var stars = jQuery(this).parent().children('li.star');
+
+            for (i = 0; i < stars.length; i++) {
+                jQuery(stars[i]).removeClass('selected');
+            }
+
+            for (i = 0; i < onStar; i++) {
+                jQuery(stars[i]).addClass('selected');
+            }
+
+            // JUST RESPONSE (Not needed)
+            var ratingValue = parseInt(jQuery('#stars li.selected').last().data('value'), 10);
+            var msg = "";
+            if (ratingValue > 1) {
+                msg = ratingValue;
+            } else {
+                msg = ratingValue;
+            }
+            responseMessage(msg);
+
+        });
+
+
+    });
+
+    function responseMessage(msg) {
+        jQuery('.success-box').fadeIn(200);
+        jQuery('.success-box div.text-message').html("<span>" + msg + "</span>");
+    }
+</script>
 <!--my code-->
+<script>
+    $(function() {
+        $('input[name="dates1"]').daterangepicker({
+            singleDatePicker: true,
+            showDropdowns: true,
+            minDate: "05/08/2020",
+            maxDate: "06/09/2020",
+            isInvalidDate: function(date) {
+                var disabled_start = moment('05/08/2020', 'MM/DD/YYYY');
+                var disabled_end = moment('05/12/2020', 'MM/DD/YYYY');
+                return date.isAfter(disabled_start) && date.isBefore(disabled_end)
+
+            },
+            maxYear: parseInt(moment().format('YYYY'),10)
+        });
+        $('input[name="dates1"]').val('');
+    });
+</script>
 <script src="js/js.js"></script>
-</body></html>
+</body>
+</html>

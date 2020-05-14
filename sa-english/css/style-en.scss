@@ -349,14 +349,21 @@ html{
     font-weight: bold;
   }
   .content-item{
-    height: 175px;
+    height: 195px;
     position: relative;
     margin-bottom: 15px;
     .footer-item{
       position: absolute;
       bottom: 10px;
-      width: 79%;
+      width: 87%;
       margin: auto;
+      align-items: flex-end;
+      .number-old{
+        font-size: 14px;
+        color: $gray-700;
+        font-weight: 500;
+        text-decoration: line-through;
+      }
       @media screen and (max-width: 780px) {
         width: 100%;
         margin: auto;
@@ -1312,4 +1319,56 @@ height: 500px;
 }
 .bs-tooltip-auto[x-placement^=top] .arrow::before, .bs-tooltip-top .arrow::before{
   border-top-color:$minColor ;
+}
+
+
+
+//new css
+
+.no-resize{
+  resize: none;
+}
+#stars {
+  margin-top: 20px;
+}
+.rating-stars ul {
+  list-style-type: none;
+  padding: 0;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+.rating-stars ul > li.star {
+  display: inline-block;
+}
+.rating-stars ul > li.star > i {
+  font-size: 2.5em;
+  color: #ccc;
+  width: 1.28571429em;
+  text-align: center;
+}
+.rating-stars ul > li.star.hover > i {
+  color: #FFCC36;
+  cursor: pointer;
+}
+
+/* Selected state of the stars */
+.rating-stars ul > li.star.selected > i {
+  color: #FF912C;
+}
+.success-box{
+  display: none !important;
+}
+section{
+  overflow: hidden;
+}
+.page-content{
+  strong{
+    color: $minColor;
+  }
+  u{
+    color: $minColor;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+  }
 }
