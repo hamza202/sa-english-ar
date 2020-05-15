@@ -1,6 +1,15 @@
 $('input[name="dates"]').daterangepicker();
 $('input[name="dates"]').val('');
+var delay = 0;
+var offset = 150;
 
+document.addEventListener('invalid', function(e){
+    $(e.target).addClass("invalid");
+    $('html, body').animate({scrollTop: $($(".invalid")[0]).offset().top - offset }, delay);
+}, true);
+document.addEventListener('change', function(e){
+    $(e.target).removeClass("invalid")
+}, true);
 $(function() {
     $('input[name="dates2"]').daterangepicker({
         locale: { cancelLabel: 'Clear' },
