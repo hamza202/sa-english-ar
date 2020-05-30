@@ -1198,4 +1198,19 @@ section {
   font-weight: 600;
   text-decoration: none; }
 
+.head-about {
+  position: relative; }
+  .head-about .m-auto {
+    position: relative;
+    z-index: 3; }
+    .head-about .m-auto h1 {
+      color: #fff; }
+  .head-about:before {
+    content: '';
+    position: absolute;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%; }
+
 /*# sourceMappingURL=style-en.css.map */
