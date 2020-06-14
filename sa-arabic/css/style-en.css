@@ -1213,4 +1213,29 @@ section {
     width: 100%;
     height: 100%; }
 
+.checkput .custom-control {
+  padding-right: 0; }
+  .checkput .custom-control .custom-control-label {
+    padding-right: 1.5rem; }
+    .checkput .custom-control .custom-control-label:before {
+      right: 0; }
+
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+  width: 100%; }
+
+.bootstrap-select > .dropdown-toggle.bs-placeholder {
+  background-color: white;
+  border: 1px solid #ced4da; }
+
+.bootstrap-select .dropdown-toggle .filter-option {
+  text-align: right; }
+
+.bootstrap-select.show-tick .dropdown-menu li a span.text {
+  margin-right: 0;
+  margin-left: 34px; }
+
+.bootstrap-select.show-tick .dropdown-menu .selected span.check-mark {
+  left: 15px;
+  right: auto; }
+
 /*# sourceMappingURL=style-en.css.map */

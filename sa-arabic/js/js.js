@@ -116,6 +116,9 @@ $(window).click(function() {
         $('.list-users-card li ul').removeClass('open');
     }
 });
+$('.save-ul1').on('click', function () {
+    $('.ul1').toggleClass('open');
+});
 $('.list-users-card li ul').click(function(event){
     event.stopPropagation();
 });

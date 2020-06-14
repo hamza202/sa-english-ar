@@ -1619,4 +1619,22 @@ section {
     height: 100%;
   }
 }
+.checkput{
+  .custom-control{
+    padding-left: 0;
+    .custom-control-label{
+      padding-left: 1.5rem;
+      &:before{
+        left: 0;
+      }
+    }
+  }
+}
 
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
+  width: 100%;
+}
+.bootstrap-select>.dropdown-toggle.bs-placeholder{
+  background-color: white;
+  border: 1px solid #ced4da;
+}

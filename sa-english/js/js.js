@@ -110,7 +110,9 @@ $('.list-users-card li ul').click(function(event){
     event.stopPropagation();
 });
 
-
+$('.save-ul1').on('click', function () {
+    $('.ul1').toggleClass('open');
+});
 
 $('input.chk').on('change', function() {
     $('input.chk').not(this).prop('checked', false);

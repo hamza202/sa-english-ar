@@ -1825,3 +1825,32 @@ section {
     height: 100%;
   }
 }
+.checkput{
+  .custom-control{
+    padding-right: 0;
+    .custom-control-label{
+      padding-right: 1.5rem;
+      &:before{
+        right: 0;
+      }
+    }
+  }
+}
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
+  width: 100%;
+}
+.bootstrap-select>.dropdown-toggle.bs-placeholder{
+  background-color: white;
+  border: 1px solid #ced4da;
+}
+.bootstrap-select .dropdown-toggle .filter-option{
+  text-align: right;
+}
+.bootstrap-select.show-tick .dropdown-menu li a span.text{
+  margin-right: 0;
+  margin-left: 34px;
+}
+.bootstrap-select.show-tick .dropdown-menu .selected span.check-mark{
+  left: 15px;
+  right: auto;
+}

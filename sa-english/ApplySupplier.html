@@ -4,6 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/daterangepicker.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
     <link rel="stylesheet" href="css/style-en.css">
 </head>
 <body>
@@ -107,12 +108,12 @@
                     <div class="form-group row  px-lg-5">
                         <label for="City" class="col-sm-3 col-form-label text-primary text-lg-right">City:</label>
                         <div class="col-sm-6">
-                            <select class="custom-select my-1 mr-sm-2" id="City">
-                                <option selected>Saudi Arabia</option>
-                                <option value="1">Saudi Arabia</option>
-                                <option value="2">Saudi Arabia</option>
-                                <option value="3">Saudi Arabia</option>
+                            <select id="City" class="selectpicker form-control" multiple>
+                                <option>Mustard</option>
+                                <option>Ketchup</option>
+                                <option>Relish</option>
                             </select>
+
                         </div>
                         <div class="col-sm-3 pt-1 "><span class="text-light">(Optional)</span></div>
 
@@ -329,10 +330,12 @@
     </div>
 </footer>
 <script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/moment.min.js"></script>
 <script src="js/daterangepicker.min.js"></script>
 <script src="js/parsley.min.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
 
 <!--my code-->
 <script src="js/js.js"></script>
