@@ -2,20 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e4753a6-8cb2-4da6-873d-4e7c8033614b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sa-arabic/ApplySupplier.html" beforeDir="false" afterPath="$PROJECT_DIR$/sa-arabic/ApplySupplier.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sa-arabic/css/style-en.css" beforeDir="false" afterPath="$PROJECT_DIR$/sa-arabic/css/style-en.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sa-arabic/css/style-en.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/sa-arabic/css/style-en.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sa-arabic/css/style-en.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sa-arabic/css/style-en.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sa-arabic/js/js.js" beforeDir="false" afterPath="$PROJECT_DIR$/sa-arabic/js/js.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sa-arabic/tour-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/sa-arabic/tour-details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sa-english/ApplySupplier.html" beforeDir="false" afterPath="$PROJECT_DIR$/sa-english/ApplySupplier.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sa-english/css/style-en.css" beforeDir="false" afterPath="$PROJECT_DIR$/sa-english/css/style-en.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sa-english/css/style-en.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/sa-english/css/style-en.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sa-english/css/style-en.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sa-english/css/style-en.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sa-english/js/js.js" beforeDir="false" afterPath="$PROJECT_DIR$/sa-english/js/js.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sa-english/tour-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/sa-english/tour-details.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +43,8 @@
       <workItem from="1589575756503" duration="1866000" />
       <workItem from="1590866945165" duration="899000" />
       <workItem from="1590867870037" duration="3000" />
-      <workItem from="1592131370535" duration="5572000" />
+      <workItem from="1592131370535" duration="6171000" />
+      <workItem from="1594422020421" duration="32000" />
     </task>
     <servers />
   </component>

@@ -1108,4 +1108,7 @@ section {
   background-color: white;
   border: 1px solid #ced4da; }
 
+section.slider {
+  overflow: visible !important; }
+
 /*# sourceMappingURL=style-en.css.map */

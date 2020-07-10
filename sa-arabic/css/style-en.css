@@ -1238,4 +1238,7 @@ section {
   left: 15px;
   right: auto; }
 
+section.slider {
+  overflow: visible !important; }
+
 /*# sourceMappingURL=style-en.css.map */
